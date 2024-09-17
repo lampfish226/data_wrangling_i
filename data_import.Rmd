@@ -15,7 +15,7 @@ This document will show how to import data.
 ## Import the FAS Litters CSV
 
 Import, and clean the variable names (make it all lower case) .
-If use 'library(janitor)' in advance, you can directly use 'clean_names' as a function.
+If use `library(janitor)` in advance, you can directly use `clean_names` as a function.
 
 ```{r}
 litters_df = read_csv("data/FAS_litters.csv")
