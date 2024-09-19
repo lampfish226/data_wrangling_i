@@ -510,6 +510,20 @@ pull(litters_df, gd0_weight)</code></pre>
 <h2>Import a SAS file</h2>
 <pre class="r"><code>pulse_df = read_sas(&quot;data/public_pulse_data.sas7bdat&quot;)</code></pre>
 </div>
+<div id="never-use-read.csv" class="section level2">
+<h2>Never use read.csv()</h2>
+<p>It will print everything, and not helpful with coding. read_csv will
+give a tibble instead of data frame.</p>
+<p>Never do this either:</p>
+<pre class="r"><code>litters_df$Group</code></pre>
+<pre><code>##  [1] Con7 Con7 Con7 Con7 Con7 Con7 Con7 Con8 Con8 Con8 Con8 Con8 Con8 Con8 Con8
+## [16] Mod7 Mod7 Mod7 Mod7 Mod7 Mod7 Mod7 Mod7 Mod7 Mod7 Mod7 Mod7 Low7 Low7 Low7
+## [31] Low7 Low7 Low7 Low7 Low7 Mod8 Mod8 Mod8 Mod8 Mod8 Mod8 Mod8 Low8 Low8 Low8
+## [46] Low8 Low8 Low8 Low8
+## Levels: Con7 Con8 Mod7 Low7 Mod8 Low8</code></pre>
+<p>Don’t take variable out of data frame.</p>
+<p>Complete on Sep 17th.</p>
+</div>
 
 
 
